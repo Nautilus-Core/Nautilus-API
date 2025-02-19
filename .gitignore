@@ -1,0 +1,25 @@
+# Ignorar o ambiente virtual
+venv/
+
+# Configuração do sistema
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Ficheiros de ambiente
+.env
+*.env
+
+# Logs e ficheiros temporários
+logs/
+*.log
+*.tmp
+.DS_Store
+
+# Configurações do VSCode
+.vscode/
+
+# Dependências geradas automaticamente
+Pipfile
+Pipfile.lock
