@@ -1,8 +1,9 @@
 from fastapi import APIRouter
-from .data import router as data_router
 from .general import router as general_router
+from .ocean import router as ocean_router
 
 router = APIRouter()
 
-router.include_router(data_router, prefix="/data", tags=["Data"])
+# Include all the routers below
 router.include_router(general_router, prefix="", tags=["General"])
+router.include_router(ocean_router, prefix="/ocean", tags=["Ocean"])
