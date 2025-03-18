@@ -39,12 +39,14 @@ Nautilus-API/
 │── src/
 │   ├── api/
 │   ├── core/
-│   ├── database/
-│   ├── models/
+│   │   ├── config.py
+│   │   ├── database_connection.py
+│   ├── interfaces/
+│   │   ├── models.py
 │   ├── routes/
 │   │   ├── general.py
-│   │   ├── data.py
-│   ├── services/
+│   │   ├── ocean.py
+│   │   ├── weather.py
 │   ├── main.py
 │── static/
 │   ├── favicon.ico
@@ -55,6 +57,9 @@ Nautilus-API/
 ```
 
 ## API Endpoints
+```
+api/v1/...
+```
 ### 🛰️General
 - `GET /status` - Check API status
 - `GET /health`- Check API Health
@@ -74,6 +79,8 @@ Nautilus-API/
 - `GET ocean/currents` - Retrieve currents
 - `GET ocean/chlorophyll` - Retrieve clorophyll
 - `GET ocean/all_ocean_data` - Retrieve all the ocean data at the same time
+
+Some routes may be waiting for parameters, check that you are sending all the parameters in the request
 
 ## 📜License
 This project is licensed under the **Apache License 2.0** - see the [LICENSE](LICENSE) file for details.
