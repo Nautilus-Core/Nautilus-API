@@ -1,1 +1,3 @@
 "fastapi[standard]"
+"psycopg[binary]"
+SQLAlchemy==2.0.39
