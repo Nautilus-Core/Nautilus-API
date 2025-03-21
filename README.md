@@ -5,7 +5,6 @@ Nautilus API is an open-source project aimed at providing data and tools for oce
 ## ⚒️Features
 - **FastAPI-based**: High-performance and easy-to-use Python web framework.
 - **Modular Routes**: Organized routes for better maintainability.
-- **Static Files Support**: Properly serves static assets like `favicon.ico`.
 - **Versioning**: Ensures API longevity and compatibility.
 
 ## ☘️Installation
